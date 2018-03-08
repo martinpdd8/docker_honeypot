@@ -21,3 +21,20 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 ### Usage
 
     docker run -it --rm dockerfile/ubuntu
+    
+    
+## Notes from Paul
+
+Install Docker
+
+First build the container by running this command from the repo root:
+
+```
+docker build -t honeytrap_machine .
+```
+
+Then log into the container with: 
+
+```
+docker run -it --rm paul
+```
