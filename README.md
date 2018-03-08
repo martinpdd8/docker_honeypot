@@ -33,8 +33,28 @@ First build the container by running this command from the repo root:
 docker build -t honeytrap_machine .
 ```
 
+If successful, you should see this message: 
+
+```
+Successfully built b761795e374c
+Successfully tagged honeytrap_machine:latest
+```
+
 Then log into the container with: 
 
 ```
-docker run -it --rm paul
+docker run -it --rm honeytrap_machine
+```
+
+Then once in the container, you can run honeytrap: 
+
+```
+honeytrap
+```
+
+It needs to be configured, but it will be installed and you should see this ouputted in the terminal: 
+
+```
+honeytrap v1.1.0 - Initializing.
+  Error -  Unable to parse /etc/honeytrap/honeytrap.conf: open(): No such file or directory
 ```
